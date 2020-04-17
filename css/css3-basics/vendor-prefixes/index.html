@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>weBasics - HTML & CSS Tutorial</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="container">
+
+      <div id="header">
+        <div>
+          <h1>weBasics</h1>
+        </div>
+        <!-- home, html, css, contact -->
+        <div class="topnav">
+          <a href="/">Home</a>
+          <a href="/html">HTML</a>
+          <a href="/css">CSS</a>
+          <a href="/contact">Contact</a>
+        </div>
+      </div>
+
+      <div id="content">
+        <div id="section">
+          
+<h2>Vendor Prefixes</h2>
+
+CSS vendor prefixes or CSS browser prefixes are a way for browser makers to add support for new CSS features during periods of testing and experimentation. Browser prefixes are used to add new features that may not be part of the final and formal CSS specification.<br><br>
+
+For example, the prefix for Safari and Chrome is -webkit. The border-radius property is currently supported in Chrome, Safari, and Mozilla, as long as it is accompanied by the browser prefix.<br>
+To specify the border-radius in Chrome and Safari, the following syntax is used:
+<pre class='code code-html'><code><xmp>-webkit-border-radius: 24px;</xmp></code></pre>
+
+Result:
+<img src="/resources/css3-vendor-prefixes-1.png">
+
+<br>The prefix is added to the property to make it work in the unsupported browsers. So, you might end up with multiple definitions of the same property, each with the specific browser prefix.
+
+<h3>Browser Prefixes</h3>
+
+Here is the list of vendor prefixes for each browser:
+<img src="/resources/css3-vendor-prefixes-2.png">
+
+        </div>
+        <div id="aside" class="sidebar">
+          <dropdown>            
+            <ul class="parent-menu">
+              <input id="drop03" type="checkbox">
+              <label for="drop03" class="animate">HTML5 Basics</label>
+                <ul>
+                  <a href="/html/html5-basics/intro"><li>Introduction to HTML5</li></a>
+                  <a href="/html/html5-basics/content-model"><li>Content Models</li></a>
+                  <a href="/html/html5-basics/html5-page-structure"><li>HTML5 Page Structure</li></a>
+                  <a href="/html/html5-basics/header-nav-footer"><li>header, nav & footer</li></a>
+                  <a href="/html/html5-basics/article-section-aside"><li>article, section & aside</li></a>
+                  <a href="/html/html5-basics/web-storage-api"><li>Web Storage API</li></a>
+                  <a href="/html/html5-basics/geo-api"><li>Geolocation API</li></a>
+                  <a href="/html/html5-basics/html5-forms"><li>HTML5 Forms, Part 1</li></a>
+                  <a href="/html/html5-basics/html5-forms-part2"><li>HTML5 Forms, Part 2</li></a>
+                </ul>
+              <input id="drop15" type="checkbox">
+              <label for="drop15" class="animate">CSS3 Basics</label>
+                <ul>
+                  <a href="/css/css3-basics/intro"><li>Introduction to CSS3</li></a>
+                  <a href="/css/css3-basics/vendor-prefixes"><li>Vendor Prefixes</li></a>
+                  <a href="/css/css3-basics/box-shadow"><li>box-shadow</li></a>
+                  <a href="/css/css3-basics/transparency"><li>Transparency Effect</li></a>
+                  <a href="/css/css3-basics/text-shadow"><li>text-shadow</li></a>
+                  <a href="/css/css3-basics/pseudo-class"><li>Pseudo Classes</li></a>
+                  <a href="/css/css3-basics/font-face"><li>@font-face</li></a>
+                </ul>
+            </ul>
+          </dropdown>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

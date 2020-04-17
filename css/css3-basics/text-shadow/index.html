@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>weBasics - HTML & CSS Tutorial</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="container">
+
+      <div id="header">
+        <div>
+          <h1>weBasics</h1>
+        </div>
+        <!-- home, html, css, contact -->
+        <div class="topnav">
+          <a href="/">Home</a>
+          <a href="/html">HTML</a>
+          <a href="/css">CSS</a>
+          <a href="/contact">Contact</a>
+        </div>
+      </div>
+
+      <div id="content">
+        <div id="section">
+          
+<h2>text-shadow</h2>
+
+<h3>The text-shadow Property</h3>
+
+The text-shadow property defines one or more comma-separated shadow effects, to be applied to the text content of the current element.<br><br>
+
+The image below shows how the text-shadow property is applied:
+<pre class='code code-html'><code><xmp><img src="/resources/css3-text-shadow-1.png"></xmp></code></pre>
+- The offset-x and offset-y values are required for the CSS text-shadow property.<br>
+- The color value is not required, but since the default for the text-shadow is transparent, the text-shadow will not appear unless you specify a color value.
+
+<h3>Multiple Text Shadows</h3>
+
+The text-shadow style can accept multiple values in a comma-separated list.<br>
+According to CSS2, the shadows are laid down in the order they appear, so if they overlap, the last one that is specified should appear on top. CSS3 has now changed that so they are applied in reverse order.<br><br>
+
+To create multiple shadows, the shadows are separated with a comma. Here is an example:
+<pre class='code code-html'><code><xmp>h1 {
+   text-shadow: 5px 10px 2px #93968f, 
+      -3px 6px 5px #58d1e3;
+}</xmp></code></pre>
+
+To make a text shadow look realistic, remember these few shadow characteristics:<br><br>
+
+- A shadow which is close to the text is normally not as blurred as a shadow that is far from the text. A shadow that is far from the text usually implies a light source which is also far from the text.<br>
+- A shadow which is close to the text usually implies that the underlying surface is close, that the light is close, or both. A close shadow is often darker than a distant shadow, because less light can get in between the shape and the underlying surface.
+
+        </div>
+        <div id="aside" class="sidebar">
+          <dropdown>            
+            <ul class="parent-menu">
+              <input id="drop03" type="checkbox">
+              <label for="drop03" class="animate">HTML5 Basics</label>
+                <ul>
+                  <a href="/html/html5-basics/intro"><li>Introduction to HTML5</li></a>
+                  <a href="/html/html5-basics/content-model"><li>Content Models</li></a>
+                  <a href="/html/html5-basics/html5-page-structure"><li>HTML5 Page Structure</li></a>
+                  <a href="/html/html5-basics/header-nav-footer"><li>header, nav & footer</li></a>
+                  <a href="/html/html5-basics/article-section-aside"><li>article, section & aside</li></a>
+                  <a href="/html/html5-basics/web-storage-api"><li>Web Storage API</li></a>
+                  <a href="/html/html5-basics/geo-api"><li>Geolocation API</li></a>
+                  <a href="/html/html5-basics/html5-forms"><li>HTML5 Forms, Part 1</li></a>
+                  <a href="/html/html5-basics/html5-forms-part2"><li>HTML5 Forms, Part 2</li></a>
+                </ul>
+              <input id="drop15" type="checkbox">
+              <label for="drop15" class="animate">CSS3 Basics</label>
+                <ul>
+                  <a href="/css/css3-basics/intro"><li>Introduction to CSS3</li></a>
+                  <a href="/css/css3-basics/vendor-prefixes"><li>Vendor Prefixes</li></a>
+                  <a href="/css/css3-basics/box-shadow"><li>box-shadow</li></a>
+                  <a href="/css/css3-basics/transparency"><li>Transparency Effect</li></a>
+                  <a href="/css/css3-basics/text-shadow"><li>text-shadow</li></a>
+                  <a href="/css/css3-basics/pseudo-class"><li>Pseudo Classes</li></a>
+                  <a href="/css/css3-basics/font-face"><li>@font-face</li></a>
+                </ul>
+            </ul>
+          </dropdown>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

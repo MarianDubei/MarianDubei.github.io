@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>weBasics - HTML & CSS Tutorial</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="container">
+
+      <div id="header">
+        <div>
+          <h1>weBasics</h1>
+        </div>
+        <!-- home, html, css, contact -->
+        <div class="topnav">
+          <a href="/">Home</a>
+          <a href="/html">HTML</a>
+          <a href="/css">CSS</a>
+          <a href="/contact">Contact</a>
+        </div>
+      </div>
+
+      <div id="content">
+        <div id="section">
+          
+<h2>header, nav & footer</h2>
+
+<h3>The &ltheader&gt Element</h3>
+
+In HTML4, we would define a header like this:
+<pre class='code code-html'><code><xmp><div id="header"></xmp></code></pre>
+
+In HTML5, a simple &ltheader&gt tag is used, instead.<br><br>
+
+The &ltheader&gt element is appropriate for use inside the body tag.
+<pre class='code code-html'><code><xmp><!DOCTYPE html>
+<html>
+   <head></head>
+   <body>
+      <header>
+        <h1> Most important heading </h1>
+        <h3> Less important heading </h3>
+      </header>
+   </body>
+</html></xmp></code></pre>
+
+<h3>The &ltfooter&gt Element</h3>
+
+The footer element is also widely used. Generally we refer to a section located at the very bottom of the web page as the footer.
+<pre class='code code-html'><code><xmp><footer>…</footer></xmp></code></pre>
+
+<h3>The &ltnav&gt Element</h3>
+
+This tag represents a section of a page that links to other pages or to certain sections within the page. This would be a section with navigation links.<br><br>
+
+Here is an example of a major block of navigation links:
+<pre class='code code-html'><code><xmp><nav>
+   <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">About us</a></li>
+   </ul>
+</nav></xmp></code></pre>
+
+        </div>
+        <div id="aside" class="sidebar">
+          <dropdown>            
+            <ul class="parent-menu">
+              <input id="drop03" type="checkbox">
+              <label for="drop03" class="animate">HTML5 Basics</label>
+                <ul>
+                  <a href="/html/html5-basics/intro"><li>Introduction to HTML5</li></a>
+                  <a href="/html/html5-basics/content-model"><li>Content Models</li></a>
+                  <a href="/html/html5-basics/html5-page-structure"><li>HTML5 Page Structure</li></a>
+                  <a href="/html/html5-basics/header-nav-footer"><li>header, nav & footer</li></a>
+                  <a href="/html/html5-basics/article-section-aside"><li>article, section & aside</li></a>
+                  <a href="/html/html5-basics/web-storage-api"><li>Web Storage API</li></a>
+                  <a href="/html/html5-basics/geo-api"><li>Geolocation API</li></a>
+                  <a href="/html/html5-basics/html5-forms"><li>HTML5 Forms, Part 1</li></a>
+                  <a href="/html/html5-basics/html5-forms-part2"><li>HTML5 Forms, Part 2</li></a>
+                </ul>
+              <input id="drop15" type="checkbox">
+              <label for="drop15" class="animate">CSS3 Basics</label>
+                <ul>
+                  <a href="/css/css3-basics/intro"><li>Introduction to CSS3</li></a>
+                  <a href="/css/css3-basics/vendor-prefixes"><li>Vendor Prefixes</li></a>
+                  <a href="/css/css3-basics/box-shadow"><li>box-shadow</li></a>
+                  <a href="/css/css3-basics/transparency"><li>Transparency Effect</li></a>
+                  <a href="/css/css3-basics/text-shadow"><li>text-shadow</li></a>
+                  <a href="/css/css3-basics/pseudo-class"><li>Pseudo Classes</li></a>
+                  <a href="/css/css3-basics/font-face"><li>@font-face</li></a>
+                </ul>
+            </ul>
+          </dropdown>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

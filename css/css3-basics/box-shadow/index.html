@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>weBasics - HTML & CSS Tutorial</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="container">
+
+      <div id="header">
+        <div>
+          <h1>weBasics</h1>
+        </div>
+        <!-- home, html, css, contact -->
+        <div class="topnav">
+          <a href="/">Home</a>
+          <a href="/html">HTML</a>
+          <a href="/css">CSS</a>
+          <a href="/contact">Contact</a>
+        </div>
+      </div>
+
+      <div id="content">
+        <div id="section">
+          
+<h2>box-shadow</h2>
+
+The CSS3 box-shadow property applies shadow to elements.<br>
+Components of the box-shadow property are decoded by browsers in the following manner:<br>
+- The first length for the horizontal offset will cast the shadow to the right of the box (required)<br>
+- The second length is for the vertical offset that will cast the shadow to below the box (required)<br>
+- The color of the shadow (optional)<br><br>
+
+In the example below, the horizontal and vertical offsets have been set to 10px:
+<pre class='code code-html'><code><xmp>div {
+   width: 300px;
+   height: 100px;
+   background-color: #9ACD32;
+   box-shadow: 10px 10px #888888;
+}</xmp></code></pre>
+
+Result:
+<img src="/resources/css3-box-shadow-1.png">
+
+<h3>Blur and Spread</h3>
+
+Besides color, there are also two optional values for the box-shadow element, which are blur and spread.<br>
+The blur and spread values should be used before the color value.
+
+<pre class='code code-html'><code><xmp>box-shadow: 10px 10px 5px 5px #888888;</xmp></code></pre>
+
+Result:
+<img src="/resources/css3-box-shadow-2.png">
+
+<h3>Negative Values</h3>
+
+Negative values can also be used for the box-shadow property.<br><br>
+
+horizontal offset - the shadow will be to the left of the box<br>
+vertical offset - the shadow will be above the box<br>
+blur radius - negative values are not allowed<br>
+spread radius - negative values will cause the shadow to shrink<br><br>
+
+For example:
+<pre class='code code-html'><code><xmp>box-shadow: -10px -10px 5px -5px #888888;</xmp></code></pre>
+
+
+        </div>
+        <div id="aside" class="sidebar">
+          <dropdown>            
+            <ul class="parent-menu">
+              <input id="drop03" type="checkbox">
+              <label for="drop03" class="animate">HTML5 Basics</label>
+                <ul>
+                  <a href="/html/html5-basics/intro"><li>Introduction to HTML5</li></a>
+                  <a href="/html/html5-basics/content-model"><li>Content Models</li></a>
+                  <a href="/html/html5-basics/html5-page-structure"><li>HTML5 Page Structure</li></a>
+                  <a href="/html/html5-basics/header-nav-footer"><li>header, nav & footer</li></a>
+                  <a href="/html/html5-basics/article-section-aside"><li>article, section & aside</li></a>
+                  <a href="/html/html5-basics/web-storage-api"><li>Web Storage API</li></a>
+                  <a href="/html/html5-basics/geo-api"><li>Geolocation API</li></a>
+                  <a href="/html/html5-basics/html5-forms"><li>HTML5 Forms, Part 1</li></a>
+                  <a href="/html/html5-basics/html5-forms-part2"><li>HTML5 Forms, Part 2</li></a>
+                </ul>
+              <input id="drop15" type="checkbox">
+              <label for="drop15" class="animate">CSS3 Basics</label>
+                <ul>
+                  <a href="/css/css3-basics/intro"><li>Introduction to CSS3</li></a>
+                  <a href="/css/css3-basics/vendor-prefixes"><li>Vendor Prefixes</li></a>
+                  <a href="/css/css3-basics/box-shadow"><li>box-shadow</li></a>
+                  <a href="/css/css3-basics/transparency"><li>Transparency Effect</li></a>
+                  <a href="/css/css3-basics/text-shadow"><li>text-shadow</li></a>
+                  <a href="/css/css3-basics/pseudo-class"><li>Pseudo Classes</li></a>
+                  <a href="/css/css3-basics/font-face"><li>@font-face</li></a>
+                </ul>
+            </ul>
+          </dropdown>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

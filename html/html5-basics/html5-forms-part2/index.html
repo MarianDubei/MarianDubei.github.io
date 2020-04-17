@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>weBasics - HTML & CSS Tutorial</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="container">
+
+      <div id="header">
+        <div>
+          <h1>weBasics</h1>
+        </div>
+        <!-- home, html, css, contact -->
+        <div class="topnav">
+          <a href="/">Home</a>
+          <a href="/html">HTML</a>
+          <a href="/css">CSS</a>
+          <a href="/contact">Contact</a>
+        </div>
+      </div>
+
+      <div id="content">
+        <div id="section">
+          
+<h2>HTML5 Forms, Part 2</h2>
+
+<h3>Creating a Search Box</h3>
+
+The new search input type can be used to create a search box:
+<pre class='code code-html'><code><xmp><input id="mysearch" name="searchitem" type="search" /></xmp></code></pre>
+
+Result:
+<img src="/resources/html5-forms-part2-1.png">
+
+<h3>Search Options</h3>
+
+The &ltdatalist&gt tag can be used to define a list of pre-defined options for the search field:
+<pre class='code code-html'><code><xmp><input id="car" type="text" list="colors" />
+<datalist id="colors">
+   <option value="Red">
+   <option value="Green">
+   <option value="Yellow">
+</datalist></xmp></code></pre>
+
+Result:
+<img src="/resources/html5-forms-part2-2.jpeg">
+<h3>Creating More Fields</h3>
+
+Some other new input types include email, url, and tel:
+<pre class='code code-html'><code><xmp><input id="email" name="email" type="email" placeholder="example@example.com" />
+<br />
+<input id="url" name="url" type="url" placeholder="example.com" />
+<br />
+<input id="tel" name="tel" type="tel" placeholder="555.555.1211" /></xmp></code></pre>
+
+These are especially useful when opening a page on a modern mobile device, which recognizes the input types and opens a corresponding keyboard matching the field's type:
+<img src="/resources/html5-forms-part2-3.png">
+
+        </div>
+        <div id="aside" class="sidebar">
+          <dropdown>            
+            <ul class="parent-menu">
+              <input id="drop03" type="checkbox">
+              <label for="drop03" class="animate">HTML5 Basics</label>
+                <ul>
+                  <a href="/html/html5-basics/intro"><li>Introduction to HTML5</li></a>
+                  <a href="/html/html5-basics/content-model"><li>Content Models</li></a>
+                  <a href="/html/html5-basics/html5-page-structure"><li>HTML5 Page Structure</li></a>
+                  <a href="/html/html5-basics/header-nav-footer"><li>header, nav & footer</li></a>
+                  <a href="/html/html5-basics/article-section-aside"><li>article, section & aside</li></a>
+                  <a href="/html/html5-basics/web-storage-api"><li>Web Storage API</li></a>
+                  <a href="/html/html5-basics/geo-api"><li>Geolocation API</li></a>
+                  <a href="/html/html5-basics/html5-forms"><li>HTML5 Forms, Part 1</li></a>
+                  <a href="/html/html5-basics/html5-forms-part2"><li>HTML5 Forms, Part 2</li></a>
+                </ul>
+              <input id="drop15" type="checkbox">
+              <label for="drop15" class="animate">CSS3 Basics</label>
+                <ul>
+                  <a href="/css/css3-basics/intro"><li>Introduction to CSS3</li></a>
+                  <a href="/css/css3-basics/vendor-prefixes"><li>Vendor Prefixes</li></a>
+                  <a href="/css/css3-basics/box-shadow"><li>box-shadow</li></a>
+                  <a href="/css/css3-basics/transparency"><li>Transparency Effect</li></a>
+                  <a href="/css/css3-basics/text-shadow"><li>text-shadow</li></a>
+                  <a href="/css/css3-basics/pseudo-class"><li>Pseudo Classes</li></a>
+                  <a href="/css/css3-basics/font-face"><li>@font-face</li></a>
+                </ul>
+            </ul>
+          </dropdown>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

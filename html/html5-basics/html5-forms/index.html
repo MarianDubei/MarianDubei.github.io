@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>weBasics - HTML & CSS Tutorial</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="container">
+
+      <div id="header">
+        <div>
+          <h1>weBasics</h1>
+        </div>
+        <!-- home, html, css, contact -->
+        <div class="topnav">
+          <a href="/">Home</a>
+          <a href="/html">HTML</a>
+          <a href="/css">CSS</a>
+          <a href="/contact">Contact</a>
+        </div>
+      </div>
+
+      <div id="content">
+        <div id="section">
+          
+<h2>HTML5 Forms, Part 1</h2>
+
+<h3>HTML5 Forms</h3>
+
+HTML5 brings many features and improvements to web form creation. There are new attributes and input types that were introduced to help create better experiences for web users.<br><br>
+
+Form creation is done in HTML5 the same way as it was in HTML4:
+<pre class='code code-html'><code><xmp><form>
+   <label>Your name:</label>
+   <input id="user" name="username" type="text" />
+</form></xmp></code></pre>
+
+<h3>New Attributes</h3>
+
+HTML5 has introduced a new attribute called placeholder. On &ltinput&gt and &lttextarea&gt elements, this attribute provides a hint to the user of what information can be entered into the field.
+<pre class='code code-html'><code><xmp><form>
+   <label for="email">Your e-mail address: </label> 
+   <input type="text" name="email" placeholder="email@example.com" /> 
+</form></xmp></code></pre>
+
+Result:
+<img src="/resources/html5-forms-1.jpeg">
+<h3>Forms with Required Fields</h3>
+
+The "required" attribute is used to make the input elements required.
+<pre class='code code-html'><code><xmp><form autocomplete="off">
+   <label for="e-mail">Your e-mail address: </label>
+   <input name="Email" type="text" required />
+   <input type="submit" value="Submit"/>
+</form></xmp></code></pre>
+
+The form will not be submitted without filling in the required fields.
+
+
+        </div>
+        <div id="aside" class="sidebar">
+          <dropdown>            
+            <ul class="parent-menu">
+              <input id="drop03" type="checkbox">
+              <label for="drop03" class="animate">HTML5 Basics</label>
+                <ul>
+                  <a href="/html/html5-basics/intro"><li>Introduction to HTML5</li></a>
+                  <a href="/html/html5-basics/content-model"><li>Content Models</li></a>
+                  <a href="/html/html5-basics/html5-page-structure"><li>HTML5 Page Structure</li></a>
+                  <a href="/html/html5-basics/header-nav-footer"><li>header, nav & footer</li></a>
+                  <a href="/html/html5-basics/article-section-aside"><li>article, section & aside</li></a>
+                  <a href="/html/html5-basics/web-storage-api"><li>Web Storage API</li></a>
+                  <a href="/html/html5-basics/geo-api"><li>Geolocation API</li></a>
+                  <a href="/html/html5-basics/html5-forms"><li>HTML5 Forms, Part 1</li></a>
+                  <a href="/html/html5-basics/html5-forms-part2"><li>HTML5 Forms, Part 2</li></a>
+                </ul>
+              <input id="drop15" type="checkbox">
+              <label for="drop15" class="animate">CSS3 Basics</label>
+                <ul>
+                  <a href="/css/css3-basics/intro"><li>Introduction to CSS3</li></a>
+                  <a href="/css/css3-basics/vendor-prefixes"><li>Vendor Prefixes</li></a>
+                  <a href="/css/css3-basics/box-shadow"><li>box-shadow</li></a>
+                  <a href="/css/css3-basics/transparency"><li>Transparency Effect</li></a>
+                  <a href="/css/css3-basics/text-shadow"><li>text-shadow</li></a>
+                  <a href="/css/css3-basics/pseudo-class"><li>Pseudo Classes</li></a>
+                  <a href="/css/css3-basics/font-face"><li>@font-face</li></a>
+                </ul>
+            </ul>
+          </dropdown>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>weBasics - HTML & CSS Tutorial</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="container">
+
+      <div id="header">
+        <div>
+          <h1>weBasics</h1>
+        </div>
+        <!-- home, html, css, contact -->
+        <div class="topnav">
+          <a href="/">Home</a>
+          <a href="/html">HTML</a>
+          <a href="/css">CSS</a>
+          <a href="/contact">Contact</a>
+        </div>
+      </div>
+
+      <div id="content">
+        <div id="section">
+          
+<h2>Content Models</h2>
+
+In HTML, elements typically belonged in either the block level or inline content model. HTML5 introduces seven main content models.<br><br>
+
+- Metadata<br>
+- Embedded<br>
+- Interactive<br>
+- Heading<br>
+- Phrasing<br>
+- Flow<br>
+- Sectioning<br><br>
+
+
+Metadata: Content that sets up the presentation or behavior of the rest of the content. These elements are found in the head of the document.
+<pre class='code code-html'><code><xmp>Elements: <base>, <link>, <meta>, <noscript>, <script>, <style>, <title></xmp></code></pre>
+
+Embedded: Content that imports other resources into the document.
+<pre class='code code-html'><code><xmp>Elements: <audio>, <video>, <canvas>, <iframe>, <img>, <math>, <object>, <svg></xmp></code></pre>
+
+Interactive: Content specifically intended for user interaction.
+<pre class='code code-html'><code><xmp>Elements: <a>, <audio>, <video>, <button>, <details>, <embed>, <iframe>, <img>, <input>, <label>, <object>, <select>, <textarea></xmp></code></pre>
+
+Heading: Defines a section header.
+<pre class='code code-html'><code><xmp>Elements: <h1>, <h2>, <h3>, <h4>, <h5>, <h6>, <hgroup></xmp></code></pre>
+
+Phrasing: This model has a number of inline level elements in common with HTML4.
+<pre class='code code-html'><code><xmp>Elements: <img>, <span>, <strong>, <label>, <br />, <small>, <sub>, and more.</xmp></code></pre>
+
+Flow content: Contains the majority of HTML5 elements that would be included in the normal flow of the document.<br><br>
+
+Sectioning content: Defines the scope of headings, content, navigation, and footers.
+<pre class='code code-html'><code><xmp>Elements: <article>, <aside>, <nav>, <section></xmp></code></pre>
+
+
+
+        </div>
+        <div id="aside" class="sidebar">
+          <dropdown>            
+            <ul class="parent-menu">
+              <input id="drop03" type="checkbox">
+              <label for="drop03" class="animate">HTML5 Basics</label>
+                <ul>
+                  <a href="/html/html5-basics/intro"><li>Introduction to HTML5</li></a>
+                  <a href="/html/html5-basics/content-model"><li>Content Models</li></a>
+                  <a href="/html/html5-basics/html5-page-structure"><li>HTML5 Page Structure</li></a>
+                  <a href="/html/html5-basics/header-nav-footer"><li>header, nav & footer</li></a>
+                  <a href="/html/html5-basics/article-section-aside"><li>article, section & aside</li></a>
+                  <a href="/html/html5-basics/web-storage-api"><li>Web Storage API</li></a>
+                  <a href="/html/html5-basics/geo-api"><li>Geolocation API</li></a>
+                  <a href="/html/html5-basics/html5-forms"><li>HTML5 Forms, Part 1</li></a>
+                  <a href="/html/html5-basics/html5-forms-part2"><li>HTML5 Forms, Part 2</li></a>
+                </ul>
+              <input id="drop15" type="checkbox">
+              <label for="drop15" class="animate">CSS3 Basics</label>
+                <ul>
+                  <a href="/css/css3-basics/intro"><li>Introduction to CSS3</li></a>
+                  <a href="/css/css3-basics/vendor-prefixes"><li>Vendor Prefixes</li></a>
+                  <a href="/css/css3-basics/box-shadow"><li>box-shadow</li></a>
+                  <a href="/css/css3-basics/transparency"><li>Transparency Effect</li></a>
+                  <a href="/css/css3-basics/text-shadow"><li>text-shadow</li></a>
+                  <a href="/css/css3-basics/pseudo-class"><li>Pseudo Classes</li></a>
+                  <a href="/css/css3-basics/font-face"><li>@font-face</li></a>
+                </ul>
+            </ul>
+          </dropdown>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

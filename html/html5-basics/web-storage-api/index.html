@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>weBasics - HTML & CSS Tutorial</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="container">
+
+      <div id="header">
+        <div>
+          <h1>weBasics</h1>
+        </div>
+        <!-- home, html, css, contact -->
+        <div class="topnav">
+          <a href="/">Home</a>
+          <a href="/html">HTML</a>
+          <a href="/css">CSS</a>
+          <a href="/contact">Contact</a>
+        </div>
+      </div>
+
+      <div id="content">
+        <div id="section">
+          
+<h2>Web Storage API</h2>
+
+<h3>HTML5 Web Storage</h3>
+
+With HTML5 web storage, websites can store data on a user's local computer.<br>
+Before HTML5, we had to use JavaScript cookies to achieve this functionality.<br><br>
+
+The Advantages of Web Storage<br>
+- More secure<br>
+- Faster<br>
+- Stores a larger amount of data<br>
+- Stored data is not sent with every server request<br>
+
+<h3>Types of Web Storage Objects</h3>
+
+There are two types of web storage objects:<br>
+- sessionStorage()<br>
+- localStorage()<br><br>
+
+Local vs. Session<br>
+- Session Storage is destroyed once the user closes the browser<br>
+- Local Storage stores data with no expiration date<br>
+
+<h3>Working with Values</h3>
+
+The syntax for web storage for both local and session storage is very simple and similar.<br>
+The data is stored as key/value pairs.<br><br>
+
+Storing a Value:
+<pre class='code code-html'><code><xmp>localStorage.setItem("key1", "value1");</xmp></code></pre>
+
+Getting a Value:<br>
+//this will print the value
+<pre class='code code-html'><code><xmp>alert(localStorage.getItem("key1")); </xmp></code></pre>
+
+Removing a Value:
+<pre class='code code-html'><code><xmp>localStorage.removeItem("key1");</xmp></code></pre>
+
+Removing All Values:
+<pre class='code code-html'><code><xmp>localStorage.clear();</xmp></code></pre>
+
+
+        </div>
+        <div id="aside" class="sidebar">
+          <dropdown>            
+            <ul class="parent-menu">
+              <input id="drop03" type="checkbox">
+              <label for="drop03" class="animate">HTML5 Basics</label>
+                <ul>
+                  <a href="/html/html5-basics/intro"><li>Introduction to HTML5</li></a>
+                  <a href="/html/html5-basics/content-model"><li>Content Models</li></a>
+                  <a href="/html/html5-basics/html5-page-structure"><li>HTML5 Page Structure</li></a>
+                  <a href="/html/html5-basics/header-nav-footer"><li>header, nav & footer</li></a>
+                  <a href="/html/html5-basics/article-section-aside"><li>article, section & aside</li></a>
+                  <a href="/html/html5-basics/web-storage-api"><li>Web Storage API</li></a>
+                  <a href="/html/html5-basics/geo-api"><li>Geolocation API</li></a>
+                  <a href="/html/html5-basics/html5-forms"><li>HTML5 Forms, Part 1</li></a>
+                  <a href="/html/html5-basics/html5-forms-part2"><li>HTML5 Forms, Part 2</li></a>
+                </ul>
+              <input id="drop15" type="checkbox">
+              <label for="drop15" class="animate">CSS3 Basics</label>
+                <ul>
+                  <a href="/css/css3-basics/intro"><li>Introduction to CSS3</li></a>
+                  <a href="/css/css3-basics/vendor-prefixes"><li>Vendor Prefixes</li></a>
+                  <a href="/css/css3-basics/box-shadow"><li>box-shadow</li></a>
+                  <a href="/css/css3-basics/transparency"><li>Transparency Effect</li></a>
+                  <a href="/css/css3-basics/text-shadow"><li>text-shadow</li></a>
+                  <a href="/css/css3-basics/pseudo-class"><li>Pseudo Classes</li></a>
+                  <a href="/css/css3-basics/font-face"><li>@font-face</li></a>
+                </ul>
+            </ul>
+          </dropdown>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

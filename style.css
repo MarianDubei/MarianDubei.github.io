@@ -1,0 +1,326 @@
+body {
+  height:100%;
+  width:100%;
+  background-color: #e8e8e8;
+  font-family: arial, sans-serif;
+}
+
+.clear { 
+	clear: both; 
+}
+
+div {
+	display: flex;
+}
+
+a {
+	color: black;
+  	text-decoration: none;
+}
+
+.course {
+  flex-direction: row;
+  margin-left: 50% auto;
+  margin-top: 30px;
+}
+.course-link {
+  margin-left: 50px;
+}
+button {
+  --top: 50%;
+  --left: 50%;
+  --size: 100%;
+  --background: none;
+  --color: black;
+  /* :p */
+  --border: black;
+  color: var(--color);
+  background: none;
+  border: 1px solid var(--border);
+  width: 265px;
+  height: 325px;
+  padding: 0.6rem 1.25rem;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  /* overflow and position matching the pseudo elements */
+  overflow: hidden;
+  position: relative;
+  /* remove the default outline
+! substituted with the pseudo elements
+*/
+  outline: none;
+}
+/* if existing, separate the inline icon from the text which follows */
+button svg {
+  display: inline-block;
+  margin-inline-end: 0.2rem;
+}
+.tutorial-btn {
+  width: 250px;
+  height: 50px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+button img{
+  height:225px;
+  width:auto;
+  margin: 0 auto;
+}
+/* with a pseudo element add a semitransparent layer with the same color of the text */
+button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: currentColor;
+  border-radius: inherit;
+  opacity: 0;
+}
+button:focus:before,
+button:hover:before {
+  opacity: 0.1;
+}
+
+/* with another pseudo element add a semitransparent layer clipped to be a circle */
+button:after {
+  content: "";
+  position: absolute;
+  top: var(--top);
+  left: var(--left);
+  transform: translate(-50%, -50%);
+  
+  background: currentColor;
+  clip-path: circle(0%);
+  opacity: 0.3;
+  border-radius: inherit;
+}
+button:hover {
+  opacity: 0.7;
+  cursor:pointer;
+}
+.contact {
+  text-decoration: underline;
+}
+h2 {
+  text-align:center;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#container {
+	flex-direction: column;
+  	width: 1000px;
+  	margin: 20px auto 0 auto;
+}
+
+#content {
+  	background-color: #ffffff;
+  	border: 0.5px solid #8a8a8a;
+  	height: auto;
+  	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#section {
+	flex-direction: column;
+	min-width: 690px;
+  max-width: 690px;
+	height: auto;
+  min-height:600px;
+	float: left;
+	padding: 30px;
+  padding-top: 20px;
+}
+
+#aside {
+	width: 250px;
+	float: left;
+	border-left: 0.5px solid #8a8a8a;
+	height: auto;
+	padding: 20px;
+}
+
+#footer {
+	padding: 20px;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+
+// COLORS
+$white: #fff;
+$main-color: #29C7D2;
+$sub-color: #253FE1;
+
+$color__bg: $sub-color;
+$color__sidebar: $white;
+$color__toggle: $sub-color;
+
+// SIZES
+$width__sidebar: 15em;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+	margin: 0;
+	font-family: "Open-sans", sans-serif;
+	box-sizing: border-box;
+}
+
+body {
+  background-color: $color__bg;
+}
+#sb{
+  display:none
+}
+#sb:checked + label + .sidebar{
+  transform: translateX(-16em);
+}
+#sb:checked + label {
+  transform: translateX(.3em) rotate(0deg); 
+  margin-left:  1em;
+}
+
+.sidebar-toggle {
+  position: fixed;
+  z-index: 1;
+  margin-top: 1em;
+  margin-left: $width__sidebar + 1em;
+  transform: rotate(45deg);
+  cursor: pointer;
+  transition: .7s;
+  .icon {
+    font-size: 1.5rem;
+    color: $white;
+  }
+}
+
+.sidebar {
+  width: $width__sidebar;
+  height: 100vh;
+  background-color: $color__sidebar;
+  transition: .7s;
+}
+
+
+dropdown{
+	display: inline-block;
+ background-color: $color__sidebar;
+  list-style-type: none;
+}
+dropdown ul {
+	padding-left: 0;
+  margin-top: 10px;
+	margin-left: 16px;
+	margin-right: 16px;
+}
+dropdown ul ul{
+  margin-left: 10px;
+}
+dropdown label, dropdown ul li{
+	display: block;
+	width: $width__sidebar;
+	padding: 10px 10px;
+}
+dropdown label:hover, dropdown ul li:hover{
+	box-shadow: 0 0 10px rgba(0,0,0,0.25);
+	font-weight: bold;
+	cursor: pointer;
+}
+dropdown label{
+	position: relative;
+}
+dropdown label:before{
+    content: '\002B';
+    font-weight: bold;
+    border-top: 4px solid transparent;
+    border-right: 8px solid white;
+    border-bottom: 1px solid white;
+    display: inline-block;
+    vertical-align: bottom;
+}
+dropdown input{
+	display: none;
+}
+dropdown input ~ ul{
+	position: relative;
+	visibility: hidden;
+	opacity: 0;
+	top: -10px;
+	display: none;
+	z-index: 1;
+}
+dropdown input:checked + label{
+  font-weight: bold;
+}
+/* dropdown input:checked ~ ul */ 
+dropdown input:checked + label + ul {
+	visibility: visible;
+	display: block;
+	opacity: 1;
+	top: 0;
+}
+
+.topnav {
+  overflow: hidden;
+  margin-left: 20px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 17px;  
+  display:block;
+  line-height:55px;
+  vertical-align:middle;
+}
+
+.topnav a:hover{
+	font-weight: bold;
+	cursor: pointer;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  color: black;
+}
+pre {
+  background: #fff;
+  white-space: pre;
+  word-wrap: break-word;
+  overflow: auto;
+}
+pre.code {
+  margin: 20px 25px;
+  border: 1px solid #d9d9d9;
+  border-radius: 2px;
+  position: relative;
+  box-shadow: 0 1px 1px rgba(0,0,0,.08);
+}
+pre.code code {
+  font-family: "Inconsolata","Monaco","Consolas","Andale Mono","Bitstream Vera Sans Mono","Courier New",Courier,monospace;
+  display: block;
+  padding: 15px 16px 14px;
+  overflow-x: auto;
+  font-size: 13px;
+  line-height: 19px;
+  color: #444;
+}
+xmp {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+<pre class='code code-html'><code><xmp>
+</xmp></code></pre>
+<br>
+<h2></h2>

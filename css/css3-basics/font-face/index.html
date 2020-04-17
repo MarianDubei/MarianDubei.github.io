@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>weBasics - HTML & CSS Tutorial</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="container">
+
+      <div id="header">
+        <div>
+          <h1>weBasics</h1>
+        </div>
+        <!-- home, html, css, contact -->
+        <div class="topnav">
+          <a href="/">Home</a>
+          <a href="/html">HTML</a>
+          <a href="/css">CSS</a>
+          <a href="/contact">Contact</a>
+        </div>
+      </div>
+
+      <div id="content">
+        <div id="section">
+          
+<h2>@font-face</h2>
+<h3>The @font-face Rule</h3>
+
+The @font-face rule allows custom fonts to be loaded into a webpage.<br>
+With the help of this rule, designs are no longer limited to the fonts that are installed on a user's computer.<br><br>
+
+In Internet Explorer 8 and earlier, the URL must point to an Embedded OpenType (eot) file, while Firefox, Chrome, etc. support True Type Fonts (ttf) fonts and OpenType Fonts (otf).
+<img src="/resources/css3-font-face-1.png">
+In the @font-face rule, you must first define a name for the font (e.g., myFirstFont), and then point to the font file.
+
+<h3>Using the @font-face Rule</h3>
+
+Each form of the font family must be declared using the @font-face rule. In the example below, a custom font called "Delicious" is loaded and used for the heading.<br><br>
+
+The HTML
+<pre class='code code-html'><code><xmp><h1>This is Our Headline</h1></xmp></code></pre>
+
+The CSS
+<pre class='code code-html'><code><xmp>@font-face {
+  font-family: Delicious; 
+  src: url('Delicious-Roman.otf'); 
+} 
+@font-face { 
+  font-family: Delicious; 
+  font-weight: bold; 
+  src: url('Delicious-Bold.otf'); 
+}
+h1{
+   font-family: Delicious, sans-serif; 
+}</xmp></code></pre>
+
+Internet Explorer has a built-in bug when multiple @font-face rules are defined. Using #iefix as shown below fixes the problem:
+<pre class='code code-html'><code><xmp>@font-face { 
+   font-family: Delicious; 
+   src: url('Delicious-Roman.ttf');
+   src: url('Delicious-Roman.eot?#iefix'); 
+}</xmp></code></pre>
+
+Result:
+<img src="/resources/css3-font-face-2.png">
+<br>The question mark fools IE into thinking the rest of the string is a query string and loads just the EOT file. The other browsers follow the spec and select the format they need, based on the src cascade.
+
+        </div>
+        <div id="aside" class="sidebar">
+          <dropdown>            
+            <ul class="parent-menu">
+              <input id="drop03" type="checkbox">
+              <label for="drop03" class="animate">HTML5 Basics</label>
+                <ul>
+                  <a href="/html/html5-basics/intro"><li>Introduction to HTML5</li></a>
+                  <a href="/html/html5-basics/content-model"><li>Content Models</li></a>
+                  <a href="/html/html5-basics/html5-page-structure"><li>HTML5 Page Structure</li></a>
+                  <a href="/html/html5-basics/header-nav-footer"><li>header, nav & footer</li></a>
+                  <a href="/html/html5-basics/article-section-aside"><li>article, section & aside</li></a>
+                  <a href="/html/html5-basics/web-storage-api"><li>Web Storage API</li></a>
+                  <a href="/html/html5-basics/geo-api"><li>Geolocation API</li></a>
+                  <a href="/html/html5-basics/html5-forms"><li>HTML5 Forms, Part 1</li></a>
+                  <a href="/html/html5-basics/html5-forms-part2"><li>HTML5 Forms, Part 2</li></a>
+                </ul>
+              <input id="drop15" type="checkbox">
+              <label for="drop15" class="animate">CSS3 Basics</label>
+                <ul>
+                  <a href="/css/css3-basics/intro"><li>Introduction to CSS3</li></a>
+                  <a href="/css/css3-basics/vendor-prefixes"><li>Vendor Prefixes</li></a>
+                  <a href="/css/css3-basics/box-shadow"><li>box-shadow</li></a>
+                  <a href="/css/css3-basics/transparency"><li>Transparency Effect</li></a>
+                  <a href="/css/css3-basics/text-shadow"><li>text-shadow</li></a>
+                  <a href="/css/css3-basics/pseudo-class"><li>Pseudo Classes</li></a>
+                  <a href="/css/css3-basics/font-face"><li>@font-face</li></a>
+                </ul>
+            </ul>
+          </dropdown>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

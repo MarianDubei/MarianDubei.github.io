@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>weBasics - HTML & CSS Tutorial</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="container">
+
+      <div id="header">
+        <div>
+          <h1>weBasics</h1>
+        </div>
+        <!-- home, html, css, contact -->
+        <div class="topnav">
+          <a href="/">Home</a>
+          <a href="/html">HTML</a>
+          <a href="/css">CSS</a>
+          <a href="/contact">Contact</a>
+        </div>
+      </div>
+
+      <div id="content">
+        <div id="section">
+          
+<h2>Pseudo Classes</h2>
+
+<h3>Working with Pseudo-Classes</h3>
+
+The CSS pseudo-classes allow us to style elements, or parts of elements, that exist in the document tree without using JavaScript or any other scripts. A pseudo-class starts with a ":" (colon).<br>
+The most commonly used pseudo-classes are :first-child and :last-child.<br><br>
+
+The :first-child pseudo-class matches an element that is the first child element of some other element.<br>
+In the following example, the selector matches any <p> element that is the first child of the div element:<br><br>
+
+The HTML:
+<pre class='code code-html'><code><xmp><div id="parent">
+   <p>First paragraph</p>
+   <p>Second paragraph</p>
+   <p>Third paragraph</p>
+   <p>Fourth paragraph</p>
+</div></xmp></code></pre>
+
+The CSS:
+<pre class='code code-html'><code><xmp>#parent p:first-child {
+   color: green;
+   text-decoration: underline;   
+}</xmp></code></pre>
+
+Result:
+<img src="/resources/css3-pseudo-class-1.png">
+<br>The :last-child pseudo-class matches an element that is the last child element of some other element.<br><br>
+
+In the example below, the selector will match any &ltp&gt element that is the last child of the div element:
+<pre class='code code-html'><code><xmp>#parent p:last-child {
+   color: green;
+   text-decoration: underline;   
+}</xmp></code></pre>
+Result:
+<img src="/resources/css3-pseudo-class-2.png">
+
+        </div>
+        <div id="aside" class="sidebar">
+          <dropdown>            
+            <ul class="parent-menu">
+              <input id="drop03" type="checkbox">
+              <label for="drop03" class="animate">HTML5 Basics</label>
+                <ul>
+                  <a href="/html/html5-basics/intro"><li>Introduction to HTML5</li></a>
+                  <a href="/html/html5-basics/content-model"><li>Content Models</li></a>
+                  <a href="/html/html5-basics/html5-page-structure"><li>HTML5 Page Structure</li></a>
+                  <a href="/html/html5-basics/header-nav-footer"><li>header, nav & footer</li></a>
+                  <a href="/html/html5-basics/article-section-aside"><li>article, section & aside</li></a>
+                  <a href="/html/html5-basics/web-storage-api"><li>Web Storage API</li></a>
+                  <a href="/html/html5-basics/geo-api"><li>Geolocation API</li></a>
+                  <a href="/html/html5-basics/html5-forms"><li>HTML5 Forms, Part 1</li></a>
+                  <a href="/html/html5-basics/html5-forms-part2"><li>HTML5 Forms, Part 2</li></a>
+                </ul>
+              <input id="drop15" type="checkbox">
+              <label for="drop15" class="animate">CSS3 Basics</label>
+                <ul>
+                  <a href="/css/css3-basics/intro"><li>Introduction to CSS3</li></a>
+                  <a href="/css/css3-basics/vendor-prefixes"><li>Vendor Prefixes</li></a>
+                  <a href="/css/css3-basics/box-shadow"><li>box-shadow</li></a>
+                  <a href="/css/css3-basics/transparency"><li>Transparency Effect</li></a>
+                  <a href="/css/css3-basics/text-shadow"><li>text-shadow</li></a>
+                  <a href="/css/css3-basics/pseudo-class"><li>Pseudo Classes</li></a>
+                  <a href="/css/css3-basics/font-face"><li>@font-face</li></a>
+                </ul>
+            </ul>
+          </dropdown>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

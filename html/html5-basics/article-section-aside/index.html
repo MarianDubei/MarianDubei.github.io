@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>weBasics - HTML & CSS Tutorial</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="container">
+
+      <div id="header">
+        <div>
+          <h1>weBasics</h1>
+        </div>
+        <!-- home, html, css, contact -->
+        <div class="topnav">
+          <a href="/">Home</a>
+          <a href="/html">HTML</a>
+          <a href="/css">CSS</a>
+          <a href="/contact">Contact</a>
+        </div>
+      </div>
+
+      <div id="content">
+        <div id="section">
+          
+<h2>article, section & aside</h2>
+
+<h3>The &ltarticle&gt Element</h3>
+
+Article is a self-contained, independent piece of content that can be used and distributed separately from the rest of the page or site. This could be a forum post, a magazine or newspaper article, a blog entry, a comment, an interactive widget or gadget, or any other independent piece of content.<br><br>
+
+The &ltarticle&gt element replaces the &ltdiv&gt element that was widely used in HTML4, along with an id or class.
+<pre class='code code-html'><code><xmp><article> 
+   <h1>The article title</h1> 
+   <p>Contents of the article element </p>
+</article></xmp></code></pre>
+
+<h3>The &ltsection&gt Element</h3>
+
+&ltsection&gt is a logical container of the page or article.<br>
+Sections can be used to divide up content within an article.<br>
+For example, a homepage could have a section for introducing the company, another for news items, and still another for contact information.<br><br>
+
+Each &ltsection&gt should be identified, typically by including a heading (h1-h6 element) as a child of the &ltsection&gt element.
+<pre class='code code-html'><code><xmp><article>
+   <h1>Welcome</h1>
+   <section>
+      <h1>Heading</h1>
+      <p>content or image</p>
+   </section>
+</article></xmp></code></pre>
+
+<h3>The &ltaside&gt Element</h3>
+
+&ltaside&gt is secondary or tangential content which could be considered separate from but indirectly related to the main content.<br>
+This type of content is often represented in sidebars.<br>
+When an &ltaside&gt tag is used within an &ltarticle&gt tag, the content of the &ltaside&gt should be specifically related to that article.
+<pre class='code code-html'><code><xmp><article>
+   <h1> Gifts for everyone </h1>
+   <p> This website will be the best place for choosing gifts </p>
+   <aside>
+      <p> Gifts will be delivered to you within 24 hours </p>
+   </aside>
+</article></xmp></code></pre>
+
+
+        </div>
+        <div id="aside" class="sidebar">
+          <dropdown>            
+            <ul class="parent-menu">
+              <input id="drop03" type="checkbox">
+              <label for="drop03" class="animate">HTML5 Basics</label>
+                <ul>
+                  <a href="/html/html5-basics/intro"><li>Introduction to HTML5</li></a>
+                  <a href="/html/html5-basics/content-model"><li>Content Models</li></a>
+                  <a href="/html/html5-basics/html5-page-structure"><li>HTML5 Page Structure</li></a>
+                  <a href="/html/html5-basics/header-nav-footer"><li>header, nav & footer</li></a>
+                  <a href="/html/html5-basics/article-section-aside"><li>article, section & aside</li></a>
+                  <a href="/html/html5-basics/web-storage-api"><li>Web Storage API</li></a>
+                  <a href="/html/html5-basics/geo-api"><li>Geolocation API</li></a>
+                  <a href="/html/html5-basics/html5-forms"><li>HTML5 Forms, Part 1</li></a>
+                  <a href="/html/html5-basics/html5-forms-part2"><li>HTML5 Forms, Part 2</li></a>
+                </ul>
+              <input id="drop15" type="checkbox">
+              <label for="drop15" class="animate">CSS3 Basics</label>
+                <ul>
+                  <a href="/css/css3-basics/intro"><li>Introduction to CSS3</li></a>
+                  <a href="/css/css3-basics/vendor-prefixes"><li>Vendor Prefixes</li></a>
+                  <a href="/css/css3-basics/box-shadow"><li>box-shadow</li></a>
+                  <a href="/css/css3-basics/transparency"><li>Transparency Effect</li></a>
+                  <a href="/css/css3-basics/text-shadow"><li>text-shadow</li></a>
+                  <a href="/css/css3-basics/pseudo-class"><li>Pseudo Classes</li></a>
+                  <a href="/css/css3-basics/font-face"><li>@font-face</li></a>
+                </ul>
+            </ul>
+          </dropdown>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>
